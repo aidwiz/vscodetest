@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Function scope example</title>
+</head>
+<body>
+  
+  <script>
+    // var x = 1;
+    // function a() {
+    //   var y = 2;
+    // }
+    // function b() {
+    //   var z = 3;
+    // }
+
+    function add7(number) {
+      number = number + 7;
+      return number;
+    }
+
+    function multiply(number1, number2) {
+      let value  = number1 * number2;
+      return value;
+    }
+
+    function capitalize(string1) {
+      let stringLength = string1.length;
+      let firstLetter = string1.charAt(0).toUpperCase();
+      // let otherLetter = string1.substring(1,stringLength).toLowerCase();
+      let otherLetter = string1.slice(1).toLowerCase();
+
+      let fullString = firstLetter + otherLetter;
+
+      console.log(firstLetter);
+      console.log(otherLetter);
+      console.log(fullString);
+    }
+
+
+    function lastLetter(string2) {
+      let word = string2.slice(-1);
+      console.log(word);
+    }
+    
+    function output() {
+      var para = document.createElement('p');
+      document.body.appendChild(para);
+      let answer = multiply(value1, value2);
+      para.textContent = 'Answer :' + answer;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+* {
+   border: 1px solid red !important;
+}
+
+.parent {
+    background-color: yellow;
+    border: 1px solid;
+    width: 500px;;
+}
+
+.child1 {
+    background-color: red;
+    /* padding: 120px 250px 120px 250px; */
+    /* width: 100%; */
+}
+
+
+.child2 {
+    background-color: blue;
+}
+
+.absolutechild {
+    background-color: magenta;
+    position: absolute;
+}
+
+.floatedchild1 {
+    background-color: rebeccapurple;
+    float:right;
+}
+
+.floatedchild2 {
+    clear: right;
+    float: right;
+    background-color: royalblue;
+}
+
+.child3 {
+    clear: right;
+    background-color: orange;
+}

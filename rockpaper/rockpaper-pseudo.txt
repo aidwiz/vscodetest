@@ -1,0 +1,6 @@
+get one user input : rock hand or scissor -> gets playerSelection
+get computer input: 	-> gets computerSelection
+show both input e.g. computer plays: vs. user plays:
+call playRound(playerSelection, computerSelection)
+	return who win: computer | player
+based on score, add to computerScore | playerScore
