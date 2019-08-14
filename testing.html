@@ -7,6 +7,21 @@
   <title>sample new document hahaha</title>
 </head>
 <body>
+  <script>
+    const toddler = {
+      age: 3.2,
+      speak: function() {
+        const ageInMonths = Math.round(this.age * 12);
+        return `i am ${ageInMonths} months old 👏`;
+        // return 'i am ' + ageInMonths + ' months old 👏';
+      }
+    };
 
+    toddler.speak();
+
+    $('.something').fadeIn(500, function() {
+      console.log('say something');
+    });
+  </script>
 </body>
 </html>
