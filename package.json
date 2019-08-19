@@ -1,0 +1,25 @@
+{
+  "name": "odin",
+  "version": "1.0.0",
+  "description": "learning how to use github via vscode scotch.io",
+  "main": "magic.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aidwiz/vscodetest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aidwiz/vscodetest/issues"
+  },
+  "homepage": "https://github.com/aidwiz/vscodetest#readme",
+  "devDependencies": {
+    "eslint": "^6.2.0"
+  }
+}
