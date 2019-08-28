@@ -8,7 +8,7 @@ function reverse(word) {
   let stringLength = wordToReverse.length;
   // console.log(stringLength);
 
-  for (i=0; i<stringLength; i++) {
+  for (let i=0; i<stringLength; i++) {
     let currentChar = wordToReverse.charAt(i);
     // console.log(currentChar);
     wordArray.push(currentChar);
@@ -16,7 +16,7 @@ function reverse(word) {
 
   let currentWord = '';
 
-  for (j=stringLength-1; j>=0; j--) {
+  for (let j=stringLength-1; j>=0; j--) {
     let currentChar = wordArray[j];
     currentWord = currentWord + currentChar;
     // console.log(currentWord);
