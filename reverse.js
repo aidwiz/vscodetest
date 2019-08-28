@@ -24,4 +24,4 @@ function reverse(word) {
   console.log(currentWord);
 }
 // console.log(blah);
-reverse("jokowi");
+reverse("anjir");
