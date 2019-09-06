@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/aidwiz/vscodetest#readme",
   "devDependencies": {
-    "eslint": "^6.2.0"
+    "eslint": "^6.3.0"
   }
 }
