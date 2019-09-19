@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <!-- reference Exercise: https://www.theodinproject.com/courses/web-development-101/lessons/dom-manipulation#exercise
+     -->
+
+    <h1>
+      THE TITLE OF YOUR WEBPAGE
+    </h1>
+    <div id="container">
+      <div class="hahaha"></div>
+    </div>
+
+    <script>
+      const container = document.querySelector('#container'); // select div
+
+      const content = document.createElement('div'); // create an element named content
+      content.classList.add('content'); //added class to content element
+      content.textContent = "this is a glorious text-content"; // add text to content element
+
+      const paragraph1 = document.createElement('p');
+      paragraph1.style.color = 'red';
+      paragraph1.textContent = "Hey, i'm red";
+
+      const h3Element = document.createElement('h3');
+      h3Element.style.color = 'blue';
+      h3Element.textContent = "I'm a blue H3!";
+
+      const newDiv = document.createElement('div');
+      newDiv.classList.add("selectThis");
+      newDiv.setAttribute('style', "background-color:pink; border-color: #000000; border-style: solid; border-width: 1px");
+      
+      const anotherH1 = document.createElement('h1');
+      anotherH1.textContent = "i'm in a div shite";
+      const anotherP = document.createElement('p');
+      anotherP.textContent = "me too!";
+
+      container.appendChild(content); // content element added to HTML here
+      container.appendChild(paragraph1);
+      container.appendChild(h3Element);
+      container.appendChild(newDiv);
+
+      newDiv.appendChild(anotherH1);
+      newDiv.appendChild(anotherP);
+
+    </script>
+  </body>
+</html>

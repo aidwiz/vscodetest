@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+    <!-- sample1 -->
+    <button class="btn">Click Me!</button>
+
+
+    <!-- sample2 -->
+    <div id="container">
+      <button id="1">Clack me!</button>
+      <button id="2">Clack me!</button>
+      <button id="3">Clack me!</button>
+    </div>
+
+    <script>
+      // sample1 
+      var btn = document.querySelector('.btn');
+      // btn.addEventListener('click', () => {
+      //   alert("Hello noobs!");
+      // });
+
+      btn.addEventListener('click', function(e) {
+        console.log(e);
+
+        e.target.innerHTML = "dont click me!"
+        e.target.style.background = "blue";
+      });
+
+      //sample 2
+      const button = document.querySelectorAll('button');
+
+      // example event: click, dblclick, keypress, keydown, keyup
+      button.forEach(button => {
+        button.addEventListener('click', function(e) {
+          alert(button.id);
+        });
+      });
+
+    </script>
+</body>
+</html>
