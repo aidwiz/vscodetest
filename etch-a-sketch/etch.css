@@ -1,0 +1,21 @@
+.flex-container {
+  display: grid;
+  /* grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto; */
+  height: 600px;
+  justify-content: center;
+  align-content: center;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  height: 7px;
+  width: 7px;
+  margin: 0.5px;
+  text-align: center;
+  font-size: 5px;
+}
+
+.flex-container > .selected {
+  background-color: #000000;
+}

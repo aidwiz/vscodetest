@@ -2,8 +2,12 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "etch-a-sketch"
 		}
 	],
 	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "etch-a-sketch"
 	}
 }
